@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Track ISS</title>
+    <link rel="stylesheet" href="{% static 'iss/css/iss.css' %}" />
+    <link rel="icon" href="{% static 'favicon.ico' %}" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    {% block page_head %}{% endblock %}
+  </head>
+  <body>
+    {% block page_header %} {% endblock %}
+    <div class="iss-navbar" id="issNavbar">
+      <a class="nav-link" onclick="redirect(event)" id="">Track</a>
+      <a class="nav-link" onclick="redirect(event)" id="about">About the Dev</a>
+    </div>
+    {% block page_content %}{% endblock %}
+    <div class="iss-footer">
+      Developed by
+      <a href="https://www.laydo.net/" target="__blank">Laydo Net</a>
+    </div>
+    <script type="text/javascript" src="{% static 'iss/js/iss.js' %}"></script>
+  </body>
+</html>

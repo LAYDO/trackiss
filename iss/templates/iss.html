@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% load static %} 
+{% block page_head %}{% endblock %} 
+{% block page_header %}
+<div class="iss-header" id="issHeader">
+    <div class="iss-name">
+      <h1 class="title-name">International Space Station</h1>
+    </div>
+</div>
+{% endblock %} {% block page_content %}
+<div class="iss-section">
+  <h2>INFO</h2>
+  <button class="iss-button" onclick="fetchISS()">ISS Position</button>
+</div>
+{% endblock %}
