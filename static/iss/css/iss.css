@@ -1,0 +1,75 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.iss-header {
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.title-name {
+  margin-bottom: 2rem;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+.iss-navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin-bottom: 1rem;
+}
+.iss-navbar a {
+  color: black;
+  text-align: center;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  font-family: "Bembo Regular";
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+.iss-navbar a:hover {
+  color: #00008c;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
+}
+.iss-navbar a.active {
+  color: #00008c;
+}
+.nav-fixed {
+  position: fixed;
+  left: 0rem;
+  top: 0rem;
+  right: 0rem;
+  z-index: 1000;
+  background-color: #939a7e;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
+}
+.nav-fixed a {
+  color: white;
+}
+.iss-footer {
+  margin: 1rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+.iss-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.iss-button {
+  width: auto;
+  padding: 1rem;
+}
