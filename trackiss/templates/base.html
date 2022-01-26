@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Track ISS</title>
-    <link rel="stylesheet" href="{% static 'iss/css/iss.css' %}" />
+    <link rel="stylesheet" href="{% static 'base/css/base.css' %}" />
     <link rel="icon" href="{% static 'favicon.ico' %}" />
     <link
       rel="stylesheet"
@@ -12,16 +11,16 @@
     {% block page_head %}{% endblock %}
   </head>
   <body>
-    {% block page_header %} {% endblock %}
-    <div class="iss-navbar" id="issNavbar">
-      <a class="nav-link" onclick="redirect(event)" id="">Home</a>
+    <div class="base-header">
+      <div class="base-button fas fa-arrow-left" onclick="back()"></div>
+      {% block page_header %} {% endblock %}
     </div>
     {% block page_content %}{% endblock %}
-    <div class="iss-footer">
+    <div class="base-footer">
       Developed by
       <a href="https://www.laydo.net/" target="__blank">Laydo Net</a>
     </div>
-    <script type="text/javascript" src="{% static 'iss/js/iss.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/js/base.js' %}"></script>
     {% block page_scripts %} {% endblock %}
   </body>
 </html>
