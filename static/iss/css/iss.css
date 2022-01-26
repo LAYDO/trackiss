@@ -52,7 +52,7 @@ body {
   top: 0rem;
   right: 0rem;
   z-index: 1000;
-  background-color: #939a7e;
+  background-color: #020b61;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
 }
 .nav-fixed a {
@@ -69,7 +69,58 @@ body {
   justify-content: center;
   align-items: center;
 }
+.iss-info {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+.iss-sec-info {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+#mapId {
+  height: 40rem;
+}
+#issMap {
+  width: 90%;
+  height: 50%;
+}
+.iss-icon {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: darkred;
+  border-radius: 50%;
+  border-color: none;
+  box-shadow: 0 0 0.5rem 0.05rem azure;
+  animation: glow 1.5s linear infinite alternate;
+}
+@keyframes glow {
+  to {
+    box-shadow: 0 0 2rem 0.05rem azure;
+  }
+}
 .iss-button {
   width: auto;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.metric {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
   padding: 1rem;
+  font-size: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
+}
+.metric-checked {
+  background-color: #020b61;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem;
 }
